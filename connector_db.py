@@ -19,13 +19,9 @@ class ConnectorDB:
 
         #try add library OracleClient
         try:
-            if sys.platform.startswith("darwin"):
-                #lib_dir = os.path.join(os.environ.get("HOME"), "Downloads", "instantclient_21_131")
-                lib_dir = "c:\instantclient_19_22"
-                cx_Oracle.init_oracle_client(lib_dir=lib_dir)
-            elif sys.platform.startswith("win32"):
-                lib_dir= "c:\instantclient_19_22"
-                cx_Oracle.init_oracle_client(lib_dir=lib_dir)
+            #lib_dir = os.path.join(os.environ.get("HOME"), "Downloads", "instantclient_21_131")
+            lib_dir = r"c:\instantclient_19_22"
+            cx_Oracle.init_oracle_client(lib_dir=lib_dir)
         except Exception as err:
             print("Whoops!")
             print(err)
