@@ -46,7 +46,7 @@ Once the script completes execution, the database tables will be populated with 
 ## Project Structure
 ### **`connector_db.py`**
 - File contains the ConnectorDB class, which serves as a connector to the Oracle database. 
-It provides methods to establish a connection, execute SQL queries, insert data from CSV files into the database, and close the connection.
+It provides methods to establish a connection, execute SQL queries, close the connection and insert data from CSV files into the database and create file inserts.txt which stores all executed queries.
 
 ### **`csv_writer.py`**
 - File contains the CSVWriter class, responsible for generating data and creating CSV files for each table.
