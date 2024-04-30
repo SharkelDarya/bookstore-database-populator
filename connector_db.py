@@ -4,10 +4,6 @@ import csv
 import json
 
 class ConnectorDB:
-    def __init__(self):
-        user_name = 's102881'
-        password = 's102881'
-
         with open('database_config.json') as f:
             data = json.load(f)
         
